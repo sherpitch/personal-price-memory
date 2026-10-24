@@ -11,7 +11,7 @@ export default function IncomeExpensePage() {
   const [settings, setSettings] = useState<Settings>(storage.getSettings());
 
   // Form states for Flower Income
-  const [flowerDate, setFlowerDate] = useState(new Date().toISOString().split('T')[0]);
+  const [flowerDate, setFlowerDate] = useState('');
   const [flowerAmount, setFlowerAmount] = useState('');
   const [flowerCurrency, setFlowerCurrency] = useState<'USD' | 'CHF' | 'THB'>('USD');
   const [flowerNote, setFlowerNote] = useState('');
